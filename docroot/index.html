@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fashion</title>
+  </head>
+  <body>
+    <div ng-app='myApp' ng-controller='FashionController'>
+      <div infinite-scroll='fashion.nextPage()' infinite-scroll-disabled='fashion.busy' infinite-scroll-distance='1'>
+        <div ng-repeat='item in fashion.items' style="border-style: solid; border-width: thin">
+          <div class='title' style="font-size: large; font-weight: bold">{{item.title}}</div>
+	  <img src='{{item.thumbnail_url}}'/>
+	  <div>
+          <small>by {{item.author}}</small>
+          </small>
+	  </div>
+	  <div class='blurb'>
+	    {{item.blurb}}
+            <a ng-href='{{item.details_url}}' target='_blank'>Read More</a>
+	  </div>
+        </div>
+        <div ng-show='fashion.busy'>Loading data...</div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="http://www.fashion.com/ng-infinite-scroll.min.js"></script>
+    <script src="http://www.fashion.com/app.js"></script>
+</body>
+</html>
