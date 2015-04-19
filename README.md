@@ -32,3 +32,4 @@ This is a small code sample for infinite scrolling with some fake data.  Prereqs
 * all external assets on CDN
 * DataFetcher that uses a real data source (ie MySQL)
 * Better CSS styling
+* Unit tests
