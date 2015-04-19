@@ -9,6 +9,7 @@ This is a small code sample for infinite scrolling with some fake data.  Prereqs
 
 ## Installation
 1. clone the repository
+1. `composer install`
 1. copy conf/apache2/www to /etc/apache2/sites-available/www
 1. `a2ensite www`
 1. link the /var/www/web directory to the cloned repository such that /var/www/web/docroot points to the docroot directory in the repository.
