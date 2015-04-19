@@ -5,6 +5,8 @@ This is a small code sample for infinite scrolling with some fake data.  Prereqs
 * php
 * composer [https://getcomposer.org](https://getcomposer.org)
 
+![Sample Screen Shot](/screenshots/sample.png?raw=true "Sample Screen Shot")
+
 ## Installation
 1. clone the repository
 1. copy conf/apache2/www to /etc/apache2/sites-available/www
